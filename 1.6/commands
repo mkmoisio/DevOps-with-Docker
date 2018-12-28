@@ -1,0 +1,2 @@
+docker build -t node1.6 .
+docker run -d --name n16 -p 8000:8000 -v $(pwd)/logs.txt:/logs.txt node1.6
