@@ -1,2 +1,2 @@
-docker build -t node_test .
-docker run -d -p 5000:5000 node_test
+docker build -t node1.5 .
+docker run -d --name n15 -p 5000:5000 node1.5
