@@ -1,0 +1,2 @@
+docker build -t kurssikartta-back .
+docker run -d --name kk -p 3001:3001 kurssikartta-back
