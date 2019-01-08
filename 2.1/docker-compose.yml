@@ -6,7 +6,7 @@ services:
       image: node-front
       build: ../1.5/
       ports:
-        - 5000:5000
+        - "5000:5000"
       container_name: node-front
 
     node-back:
@@ -15,5 +15,16 @@ services:
       volumes:
         - ../1.6/logs.txt:/logs.txt
       ports:
-        - 8000:8000
+        - "8000:8000"
       container_name: node-back
+      links:
+        - redis
+      depends_on:
+        - redis
+      environment:
+        - REDIS=redis
+    redis:
+      image: redis
+      container_name: redis
+      ports:
+        - "6379:6379"
