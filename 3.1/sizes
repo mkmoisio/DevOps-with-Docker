@@ -1,0 +1,11 @@
+BEFORE
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+node-back           latest              b46b946cb04a        24 minutes ago      342MB
+node-front          latest              65bec18cb98c        25 minutes ago      417MB
+
+AFTER
+
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+node-back           latest              f0106630df1d        About a minute ago   316MB
+node-front          latest              d64914062a20        5 minutes ago        390MB
